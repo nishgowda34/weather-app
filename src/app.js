@@ -1,16 +1,21 @@
 'use strict';
 
-var express = require ('express')
-    about = require('./lib/about.txt');
-
+var express = require("express");
 var app = express();
+var routes = require("./routes");
+
+var jsonParser = require("body-parser").json;
+
+app.use(jsonParser());
+app.use("/city",routes);
+
+app.use('/static', express.static(__dirname + '/public'))
+
+app.set('view engine', 'jade');
+app.set('views',__dirname + '/templates')
 
 app.get('/', function(req,res){
-  res.send("i love treehouse");
-});
-
-app.get('/about', function(req,res){
-  res.send(about);
+  res.render('index');
 });
 
 app.listen(3000,function(){

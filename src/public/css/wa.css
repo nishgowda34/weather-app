@@ -1,0 +1,70 @@
+/*Body Style*/
+body{
+background-image: url("http://cdn.weatheravenue.com/img/background/background.jpg");
+background-origin: content-box;
+
+width: 80%;
+margin: 40px 40px 40px 40px;
+
+}
+
+   button {
+       width: 150px;
+    background-color: #333;
+    color: bisque;
+
+   }
+
+ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: bisque;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+
+.centered {
+  text-align: right;
+}
+
+header{
+    color: black;
+    }
+
+#form{
+    font-size: 15px;
+
+}
+#style{
+    font-size: 18px;
+}
+
+/*Map Style*/
+#map {
+
+  position: absolute;
+      right: 200px;
+      top: 100px;
+      width:400px;
+    height:400px;
+    float: right;
+    border: 2px solid black;
+        }
