@@ -3,13 +3,18 @@ body{
 background-image: url("http://cdn.weatheravenue.com/img/background/background.jpg");
 background-origin: content-box;
 
-width: 80%;
-margin: 40px 40px 40px 40px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 1.3em;
+  line-height: 1.6em;
+  font-family: Helvetica Neue, Helvetica, Arial, serif;
+    width: 80%;
+    margin: 40px 40px 40px 40px;
 
 }
 
    button {
-       width: 150px;
+     width: 150px;
     background-color: #333;
     color: bisque;
 
@@ -46,8 +51,12 @@ li a:hover {
 }
 
 header{
-    color: black;
+    color: #05056a;
     }
+
+h1{
+  text-align: center;
+}
 
 #form{
     font-size: 15px;
@@ -59,11 +68,7 @@ header{
 
 /*Map Style*/
 #map {
-
-  position: absolute;
-      right: 200px;
-      top: 100px;
-      width:400px;
+    width:400px;
     height:400px;
     float: right;
     border: 2px solid black;
